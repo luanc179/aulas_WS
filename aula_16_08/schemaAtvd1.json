@@ -1,0 +1,110 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "caderneta"
+    ],
+    "properties": {
+        "caderneta": {
+            "type": "object",
+            "default": {},
+            "title": "The caderneta Schema",
+            "required": [
+                "contato"
+            ],
+            "properties": {
+                "contato": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The contato Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "A Schema",
+                        "required": [
+                            "nome",
+                            "endereco",
+                            "telefone"
+                        ],
+                        "properties": {
+                            "nome": {
+                                "type": "string",
+                                "title": "The nome Schema",
+                                "examples": [
+                                    "Luan",
+                                    "Juca"
+                                ]
+                            },
+                            "endereco": {
+                                "type": "string",
+                                "title": "The endereco Schema",
+                                "examples": [
+                                    "Blablabla",
+                                    "sagasdgsadgasdg"
+                                ]
+                            },
+                            "telefone": {
+                                "type": "string",
+                                "title": "The telefone Schema",
+                                "examples": [
+                                    "32 99999-9999",
+                                    "32 88888-9999"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "nome": "Luan",
+                            "endereco": "Blablabla",
+                            "telefone": "32 99999-9999"
+                        },
+                        {
+                            "nome": "Juca",
+                            "endereco": "sagasdgsadgasdg",
+                            "telefone": "32 88888-9999"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "nome": "Luan",
+                            "endereco": "Blablabla",
+                            "telefone": "32 99999-9999"
+                        },
+                        {
+                            "nome": "Juca",
+                            "endereco": "sagasdgsadgasdg",
+                            "telefone": "32 88888-9999"
+                        }]
+                    ]
+                }
+            },
+            "examples": [{
+                "contato": [{
+                    "nome": "Luan",
+                    "endereco": "Blablabla",
+                    "telefone": "32 99999-9999"
+                },
+                {
+                    "nome": "Juca",
+                    "endereco": "sagasdgsadgasdg",
+                    "telefone": "32 88888-9999"
+                }]
+            }]
+        }
+    },
+    "examples": [{
+        "caderneta": {
+            "contato": [{
+                "nome": "Luan",
+                "endereco": "Blablabla",
+                "telefone": "32 99999-9999"
+            },
+            {
+                "nome": "Juca",
+                "endereco": "sagasdgsadgasdg",
+                "telefone": "32 88888-9999"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,426 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "estoque"
+    ],
+    "properties": {
+        "estoque": {
+            "type": "object",
+            "default": {},
+            "title": "The estoque Schema",
+            "required": [
+                "produto"
+            ],
+            "properties": {
+                "produto": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The produto Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "A Schema",
+                        "required": [
+                            "fabricante",
+                            "preco",
+                            "nomeProduto",
+                            "quantidade",
+                            "categoria"
+                        ],
+                        "properties": {
+                            "fabricante": {
+                                "type": "array",
+                                "title": "The fabricante Schema",
+                                "items": {
+                                    "type": "object",
+                                    "title": "A Schema",
+                                    "required": [
+                                        "nome",
+                                        "telefone",
+                                        "endereco"
+                                    ],
+                                    "properties": {
+                                        "nome": {
+                                            "type": "string",
+                                            "title": "The nome Schema",
+                                            "examples": [
+                                                "Fabricante A",
+                                                "Fabricante B",
+                                                "Fabricante C"
+                                            ]
+                                        },
+                                        "telefone": {
+                                            "type": "string",
+                                            "title": "The telefone Schema",
+                                            "examples": [
+                                                "32 99999-9999",
+                                                "32 88888-9999",
+                                                "32 77777-9999"
+                                            ]
+                                        },
+                                        "endereco": {
+                                            "type": "array",
+                                            "title": "The endereco Schema",
+                                            "items": {
+                                                "type": "object",
+                                                "title": "A Schema",
+                                                "required": [
+                                                    "rua",
+                                                    "num",
+                                                    "cep"
+                                                ],
+                                                "properties": {
+                                                    "rua": {
+                                                        "type": "string",
+                                                        "title": "The rua Schema",
+                                                        "examples": [
+                                                            "Blalalalla",
+                                                            "wegasdgasg",
+                                                            "ahdafhdafhdf"
+                                                        ]
+                                                    },
+                                                    "num": {
+                                                        "type": "string",
+                                                        "title": "The num Schema",
+                                                        "examples": [
+                                                            "100",
+                                                            "20",
+                                                            "300"
+                                                        ]
+                                                    },
+                                                    "cep": {
+                                                        "type": "string",
+                                                        "title": "The cep Schema",
+                                                        "examples": [
+                                                            "36035-100",
+                                                            "22222-100",
+                                                            "88888-100"
+                                                        ]
+                                                    }
+                                                },
+                                                "examples": [{
+                                                    "rua": "Blalalalla",
+                                                    "num": "100",
+                                                    "cep": "36035-100"
+                                                },
+                                                {
+                                                    "rua": "wegasdgasg",
+                                                    "num": "20",
+                                                    "cep": "22222-100"
+                                                },
+                                                {
+                                                    "rua": "ahdafhdafhdf",
+                                                    "num": "300",
+                                                    "cep": "88888-100"
+                                                }]
+                                            },
+                                            "examples": [
+                                                [{
+                                                    "rua": "Blalalalla",
+                                                    "num": "100",
+                                                    "cep": "36035-100"
+                                                }],
+                                                [{
+                                                    "rua": "wegasdgasg",
+                                                    "num": "20",
+                                                    "cep": "22222-100"
+                                                }],
+                                                [{
+                                                    "rua": "ahdafhdafhdf",
+                                                    "num": "300",
+                                                    "cep": "88888-100"
+                                                }]
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "nome": "Fabricante A",
+                                        "telefone": "32 99999-9999",
+                                        "endereco": [{
+                                            "rua": "Blalalalla",
+                                            "num": "100",
+                                            "cep": "36035-100"
+                                        }]
+                                    },
+                                    {
+                                        "nome": "Fabricante B",
+                                        "telefone": "32 88888-9999",
+                                        "endereco": [{
+                                            "rua": "wegasdgasg",
+                                            "num": "20",
+                                            "cep": "22222-100"
+                                        }]
+                                    },
+                                    {
+                                        "nome": "Fabricante C",
+                                        "telefone": "32 77777-9999",
+                                        "endereco": [{
+                                            "rua": "ahdafhdafhdf",
+                                            "num": "300",
+                                            "cep": "88888-100"
+                                        }]
+                                    }]
+                                },
+                                "examples": [
+                                    [{
+                                        "nome": "Fabricante A",
+                                        "telefone": "32 99999-9999",
+                                        "endereco": [{
+                                            "rua": "Blalalalla",
+                                            "num": "100",
+                                            "cep": "36035-100"
+                                        }]
+                                    }],
+                                    [{
+                                        "nome": "Fabricante B",
+                                        "telefone": "32 88888-9999",
+                                        "endereco": [{
+                                            "rua": "wegasdgasg",
+                                            "num": "20",
+                                            "cep": "22222-100"
+                                        }]
+                                    }],
+                                    [{
+                                        "nome": "Fabricante C",
+                                        "telefone": "32 77777-9999",
+                                        "endereco": [{
+                                            "rua": "ahdafhdafhdf",
+                                            "num": "300",
+                                            "cep": "88888-100"
+                                        }]
+                                    }]
+                                ]
+                            },
+                            "preco": {
+                                "type": "string",
+                                "title": "The preco Schema",
+                                "examples": [
+                                    "R$ 5,00",
+                                    "R$ 10,00",
+                                    "R$ 15,00"
+                                ]
+                            },
+                            "nomeProduto": {
+                                "type": "string",
+                                "title": "The nomeProduto Schema",
+                                "examples": [
+                                    "Desinfetante",
+                                    "Sabonete",
+                                    "Condicionador"
+                                ]
+                            },
+                            "quantidade": {
+                                "type": "string",
+                                "title": "The quantidade Schema",
+                                "examples": [
+                                    "100",
+                                    "1000",
+                                    "260"
+                                ]
+                            },
+                            "categoria": {
+                                "type": "string",
+                                "title": "The categoria Schema",
+                                "examples": [
+                                    "Limpeza",
+                                    "Banho"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "fabricante": [{
+                                "nome": "Fabricante A",
+                                "telefone": "32 99999-9999",
+                                "endereco": [{
+                                    "rua": "Blalalalla",
+                                    "num": "100",
+                                    "cep": "36035-100"
+                                }]
+                            }],
+                            "preco": "R$ 5,00",
+                            "nomeProduto": "Desinfetante",
+                            "quantidade": "100",
+                            "categoria": "Limpeza"
+                        },
+                        {
+                            "fabricante": [{
+                                "nome": "Fabricante B",
+                                "telefone": "32 88888-9999",
+                                "endereco": [{
+                                    "rua": "wegasdgasg",
+                                    "num": "20",
+                                    "cep": "22222-100"
+                                }]
+                            }],
+                            "preco": "R$ 10,00",
+                            "nomeProduto": "Sabonete",
+                            "quantidade": "1000",
+                            "categoria": "Banho"
+                        },
+                        {
+                            "fabricante": [{
+                                "nome": "Fabricante C",
+                                "telefone": "32 77777-9999",
+                                "endereco": [{
+                                    "rua": "ahdafhdafhdf",
+                                    "num": "300",
+                                    "cep": "88888-100"
+                                }]
+                            }],
+                            "preco": "R$ 15,00",
+                            "nomeProduto": "Condicionador",
+                            "quantidade": "260",
+                            "categoria": "Banho"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "fabricante": [{
+                                "nome": "Fabricante A",
+                                "telefone": "32 99999-9999",
+                                "endereco": [{
+                                    "rua": "Blalalalla",
+                                    "num": "100",
+                                    "cep": "36035-100"
+                                }]
+                            }],
+                            "preco": "R$ 5,00",
+                            "nomeProduto": "Desinfetante",
+                            "quantidade": "100",
+                            "categoria": "Limpeza"
+                        },
+                        {
+                            "fabricante": [{
+                                "nome": "Fabricante B",
+                                "telefone": "32 88888-9999",
+                                "endereco": [{
+                                    "rua": "wegasdgasg",
+                                    "num": "20",
+                                    "cep": "22222-100"
+                                }]
+                            }],
+                            "preco": "R$ 10,00",
+                            "nomeProduto": "Sabonete",
+                            "quantidade": "1000",
+                            "categoria": "Banho"
+                        },
+                        {
+                            "fabricante": [{
+                                "nome": "Fabricante C",
+                                "telefone": "32 77777-9999",
+                                "endereco": [{
+                                    "rua": "ahdafhdafhdf",
+                                    "num": "300",
+                                    "cep": "88888-100"
+                                }]
+                            }],
+                            "preco": "R$ 15,00",
+                            "nomeProduto": "Condicionador",
+                            "quantidade": "260",
+                            "categoria": "Banho"
+                        }]
+                    ]
+                }
+            },
+            "examples": [{
+                "produto": [{
+                    "fabricante": [{
+                        "nome": "Fabricante A",
+                        "telefone": "32 99999-9999",
+                        "endereco": [{
+                            "rua": "Blalalalla",
+                            "num": "100",
+                            "cep": "36035-100"
+                        }]
+                    }],
+                    "preco": "R$ 5,00",
+                    "nomeProduto": "Desinfetante",
+                    "quantidade": "100",
+                    "categoria": "Limpeza"
+                },
+                {
+                    "fabricante": [{
+                        "nome": "Fabricante B",
+                        "telefone": "32 88888-9999",
+                        "endereco": [{
+                            "rua": "wegasdgasg",
+                            "num": "20",
+                            "cep": "22222-100"
+                        }]
+                    }],
+                    "preco": "R$ 10,00",
+                    "nomeProduto": "Sabonete",
+                    "quantidade": "1000",
+                    "categoria": "Banho"
+                },
+                {
+                    "fabricante": [{
+                        "nome": "Fabricante C",
+                        "telefone": "32 77777-9999",
+                        "endereco": [{
+                            "rua": "ahdafhdafhdf",
+                            "num": "300",
+                            "cep": "88888-100"
+                        }]
+                    }],
+                    "preco": "R$ 15,00",
+                    "nomeProduto": "Condicionador",
+                    "quantidade": "260",
+                    "categoria": "Banho"
+                }]
+            }]
+        }
+    },
+    "examples": [{
+        "estoque": {
+            "produto": [{
+                "fabricante": [{
+                    "nome": "Fabricante A",
+                    "telefone": "32 99999-9999",
+                    "endereco": [{
+                        "rua": "Blalalalla",
+                        "num": "100",
+                        "cep": "36035-100"
+                    }]
+                }],
+                "preco": "R$ 5,00",
+                "nomeProduto": "Desinfetante",
+                "quantidade": "100",
+                "categoria": "Limpeza"
+            },
+            {
+                "fabricante": [{
+                    "nome": "Fabricante B",
+                    "telefone": "32 88888-9999",
+                    "endereco": [{
+                        "rua": "wegasdgasg",
+                        "num": "20",
+                        "cep": "22222-100"
+                    }]
+                }],
+                "preco": "R$ 10,00",
+                "nomeProduto": "Sabonete",
+                "quantidade": "1000",
+                "categoria": "Banho"
+            },
+            {
+                "fabricante": [{
+                    "nome": "Fabricante C",
+                    "telefone": "32 77777-9999",
+                    "endereco": [{
+                        "rua": "ahdafhdafhdf",
+                        "num": "300",
+                        "cep": "88888-100"
+                    }]
+                }],
+                "preco": "R$ 15,00",
+                "nomeProduto": "Condicionador",
+                "quantidade": "260",
+                "categoria": "Banho"
+            }]
+        }
+    }]
+}

@@ -1,0 +1,64 @@
+{
+    "estoque":{
+        "produto": [
+            {
+                "fabricante": [
+                    {
+                        "nome": "Fabricante A",
+                        "telefone": "32 99999-9999",
+                        "endereco": [
+                            {
+                                "rua": "Blalalalla",
+                                "num": "100",
+                                "cep": "36035-100"
+                            }
+                        ]
+                    }
+                ],
+                "preco": "R$ 5,00",
+                "nomeProduto": "Desinfetante",
+                "quantidade": "100",
+                "categoria": "Limpeza"
+            },
+            {
+                "fabricante": [
+                    {
+                        "nome": "Fabricante B",
+                        "telefone": "32 88888-9999",
+                        "endereco": [
+                            {
+                                "rua": "wegasdgasg",
+                                "num": "20",
+                                "cep": "22222-100"
+                            }
+                        ]
+                    }
+                ],
+                "preco": "R$ 10,00",
+                "nomeProduto": "Sabonete",
+                "quantidade": "1000",
+                "categoria": "Banho"
+            },
+            {
+                "fabricante": [
+                    {
+                        "nome": "Fabricante C",
+                        "telefone": "32 77777-9999",
+                        "endereco": [
+                            {
+                                "rua": "ahdafhdafhdf",
+                                "num": "300",
+                                "cep": "88888-100"
+                            }
+                        ]
+                    }
+                ],
+                "preco": "R$ 15,00",
+                "nomeProduto": "Condicionador",
+                "quantidade": "260",
+                "categoria": "Banho"
+            }
+        ]
+    }
+}
+

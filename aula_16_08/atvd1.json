@@ -1,0 +1,17 @@
+{
+    "caderneta" : {
+        
+        "contato": [{
+            "nome": "Luan" ,
+            "endereco": "Blablabla",
+            "telefone": "32 99999-9999"
+           }, {
+
+            "nome": "Juca" ,
+            "endereco": "sagasdgsadgasdg",
+            "telefone": "32 88888-9999"
+           }
+        ]
+        
+        }
+}
