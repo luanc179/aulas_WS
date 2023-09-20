@@ -10,4 +10,26 @@ const getToken = async () => {
         },
         body: "grant_type=client_credentials"
     });
+
+    const data = await result.json();
+    return data.access_token;
 };
+
+const getGeneres = async(token) =>{
+    const result = await fetch('https://api.spotify.com/v1/browse/categories?locale=pt_BR',
+    {
+        method: "GET",
+        headers: {
+            "Authorization": "Bearer "+token
+        }
+    });
+    const data = await result.json();
+    return data.categories;
+};
+
+(async () =>{
+    const token = await getToken();
+    const generos = await getGeneres(token);
+    console.log('Token:', token);
+    console.log(generos);
+})();
